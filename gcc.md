@@ -75,3 +75,29 @@ Hello Cpp
 对于GCC的编译选项，没有必要全部记住，记住常用的即可，其他用到了再去官网查询：
 
 https://gcc.gnu.org/onlinedocs/gcc/Invoking-GCC.html
+
+## 编译选项
+
+-Wall			// 大部分警告 
+
+-Wextra			// 一些额外的警告
+
+-Werror			// 当出现警告时转为错误，停止编译
+
+-Wconversion		// 一些可能改变值的隐式转换，给出警告。
+
+-Wno-unused-parameter	// 函数中出现未使用的参数，不给出警告。
+
+-Wold-style-cast		// C风格的转换，给出警告
+
+-Woverloaded-virtual	// 如果函数的声明隐藏住了基类的虚函数，就给出警告。
+
+-Wpointer-arith		// 对函数指针或者void *类型的指针进行算术操作时给出警告
+
+-Wshadow		// 当一个局部变量遮盖住了另一个局部变量，或者全局变量时，给出警告。
+
+
+-Wwrite-strings		// 规定字符串常量的类型是const char[length],因此,把这样的地址复制给 non-const char *指针将产生警告.这些警告能够帮助你在编译期间发现企图写入字符串常量 的代码
+
+-march=native		// 指定cpu体系结构为本地平台
+
